@@ -4,12 +4,20 @@
 
 
 int number = new Random().Next(100, 1000);
-Console.WriteLine($" Случайное число в диапазоне от 100 до 1000 -> {number}");
-int firstDigit = number / 100;
-int thirdDigit = number % 10;
-int result = firstDigit * 10 + thirdDigit;
+// int firstDigit = number / 100;
+// int thirdDigit = number % 10;
+// int result = firstDigit * 10 + thirdDigit;
 
-Console.WriteLine($" 2 цифры из трехзначного числа {number} -> {result}");
+int digit(int num)
+{
+  int firstDigit = num / 100;
+  int thirdDigit = num % 10;
+  int result = firstDigit * 10 + thirdDigit;
+  return result;
+}
+
+int solution = digit(number);
+Console.WriteLine($" 2 цифры из трехзначного числа {number} -> {solution}");
 
 
 
