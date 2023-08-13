@@ -9,13 +9,22 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int SecondDigitThirdNumber(int number)
 {
-  int firstDigit = number / 100; // 456 / 100 = 4.56 = 4
-  int thirdDigit = number % 10; // 456 / 10 = 45,6 = 6
-  int result = (firstDigit + thirdDigit) / 2;
+  int firstDigit = number % 100; // 456 % 100 = 4.56 = 56
+  int result = firstDigit / 10; // 56 / 10 = 5
   return result;
 
 }
 
-int solution = SecondDigitThirdNumber(number);
-Console.WriteLine($" Вторая цифра из трехзначного числа : {solution}");
+
+if (number < 100 || number > 1000)
+{
+  Console.WriteLine("Число не соответствует условию, введите другое число");
+
+}
+else
+{
+  int solution = SecondDigitThirdNumber(number);
+  Console.WriteLine($" Вторая цифра из трехзначного числа : {solution}");
+}
+
 
