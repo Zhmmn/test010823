@@ -3,9 +3,9 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int number = new Random().Next(1, 1000000);
-Console.WriteLine($" Случайное число : {number}");
-// int number = 589655;
+// int number = new Random().Next(1, 1000000);
+// Console.WriteLine($" Случайное число : {number}");
+int number = 1;
 
 while (number > 999)
 {
@@ -13,7 +13,7 @@ while (number > 999)
 }
 if (number < 100)
 {
-  Console.WriteLine("третьей цифры нет");
+  Console.WriteLine("Третьей цифры нет");
 }
 else
 {
