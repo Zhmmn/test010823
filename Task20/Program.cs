@@ -11,7 +11,7 @@ double findDistance(int xA, int yA, int xB, int yB)
 // double pow = Math.Pow(5, 3); // возведение в степень
 
 // double d = 5.098889; // 5.09
-// double dRound = Math.Round(d, 2, MidpointRounding.ToZero);
+// double dRound = Math.Round(d, 2, MidpointRounding.ToZero); // MidpointRounding.ToZero один из способов округления
 // Console.WriteLine(dRound); // округление
 // Console.WriteLine($"{d:F2}");
 
