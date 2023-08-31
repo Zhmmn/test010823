@@ -8,14 +8,17 @@ int SumNumbers(int num)
   int sum = 0;
   for (int i = 1; i <= num; i++)
   {
-    sum += i; // sum = sum + i
+    checked
+    {
+      sum += i; // sum = sum + i
+    }
   }
   return sum;
 }
 
 
 Console.WriteLine("Введите натуральное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine()); // если ответ больше 2 млрд .то значение не корректное так как в 32 битах помещается только 2 млрд
 int sumNumbers = SumNumbers(number);
 if (number < 1)
 {
