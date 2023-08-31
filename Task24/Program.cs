@@ -8,7 +8,7 @@ int SumNumbers(int num)
   int sum = 0;
   for (int i = 1; i <= num; i++)
   {
-    checked
+    checked // команда проверяет на заполненность 
     {
       sum += i; // sum = sum + i
     }
