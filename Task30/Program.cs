@@ -14,6 +14,7 @@
 void FillArray(int[] massiv)
 {
   int i = 0;
+  var random = new Random();
   while (i < massiv.Length)
   {
     massiv[i] = new Random().Next(2);
