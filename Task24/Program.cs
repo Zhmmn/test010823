@@ -17,7 +17,7 @@ int SumNumbers(int num)
 Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int sumNumbers = SumNumbers(number);
-if (sumNumbers < 1)
+if (number < 1)
 {
   Console.WriteLine("Введено некоректное число");
   return;
