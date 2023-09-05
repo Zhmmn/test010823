@@ -41,29 +41,29 @@
 //   System.Console.WriteLine($"Число {powerBase} в степени {exponent} равно {Power(powerBase, exponent)} ");
 // }
 
-int exponentNumber(int num1, int num2)
-{
-  int exponent = 1;
-  for (int i = 0; i < num2; i++)
+  int exponentNumber(int num1, int num2)
   {
-    checked
+    int exponent = 1;
+    for (int i = 0; i < num2; i++)
     {
-      exponent *= num1;
+      checked
+      {
+        exponent *= num1;
+      }
     }
+    return exponent;
   }
-  return exponent;
-}
 
-Console.WriteLine("Введите первое число");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число");
-int num2 = Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Введите первое число");
+  int num1 = Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Введите второе число");
+  int num2 = Convert.ToInt32(Console.ReadLine());
 
-if (num2 <= 0)
-{
-  Console.WriteLine("Введено некорректное число");
-}
-else
-{
-  Console.WriteLine($" число {num1} в степени {num2} равно {exponentNumber(num1, num2)} ");
-}
+  if (num2 <= 0)
+  {
+    Console.WriteLine("Введено некорректное число");
+  }
+  else
+  {
+    Console.WriteLine($" число {num1} в степени {num2} равно {exponentNumber(num1, num2)} ");
+  }
